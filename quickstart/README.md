@@ -1,5 +1,5 @@
-# JPA
-學習筆記
+# Quickstart
+快速入門
 
 ## 環境
  - JDK 1.8
