@@ -19,13 +19,12 @@ public class MainClass {
       entityManagerFactory = Persistence.createEntityManagerFactory("crudUnit");
       entityManager = entityManagerFactory.createEntityManager();
       entityManager.getTransaction().begin();
-      Book book = new Book("哈哈哈哈", "fuck", UUID.randomUUID().toString());
+      Book book = new Book("9487 JPA教學", "leo", UUID.randomUUID().toString());
       entityManager.persist(book);
       
       entityManager.getTransaction().commit();
     } catch (Exception ex) {
       entityManager.getTransaction().rollback();
-      System.out.println("報錯");
       StackTraceElement[] eles = ex.getStackTrace();
       for(StackTraceElement ele: eles){
         System.out.println(ele);

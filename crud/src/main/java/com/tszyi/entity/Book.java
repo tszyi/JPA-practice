@@ -18,8 +18,8 @@ public class Book {
   private String name;
   @Column(name = "author", length = 20, nullable = false)
   private String author;
-//  @Column(name = "isbn", length = 36, nullable = false)
-//  private String ISBN;
+  @Column(name = "isbn", length = 36, nullable = false)
+  private String ISBN;
 
   public Book() {
     super();
@@ -29,7 +29,7 @@ public class Book {
     super();
     this.name = name;
     this.author = author;
-//    ISBN = iSBN;
+    ISBN = iSBN;
   }
 
   public Integer getId() {
@@ -56,12 +56,12 @@ public class Book {
     this.author = author;
   }
 
-//  public String getISBN() {
-//    return ISBN;
-//  }
-//
-//  public void setISBN(String iSBN) {
-//    ISBN = iSBN;
-//  }
+  public String getISBN() {
+    return ISBN;
+  }
+
+  public void setISBN(String iSBN) {
+    ISBN = iSBN;
+  }
 
 }
